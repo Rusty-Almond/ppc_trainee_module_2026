@@ -4,9 +4,9 @@
 # Checkpoint 3
 ## PID Control
 The formula:
-$$
+```math
 u(t)=K_pe(t)+K_I\int_0^te(t)dt+K_d\frac{de}{dt}
-$$
+```
 
 The first term is the proportional, which takes the body to the desired value.
 The integral is needed to actually reach the target because the proportional term becomes very close to 0 as the velocity reaches the target. It keeps on adding the errors we have had till now and adds it so that it reaches the target.
@@ -43,9 +43,9 @@ The front wheel angle $\delta$ such that the vehicle follow a path,known as late
 
 where alpha is the angle of the target point from the current position.
 Calculating, 
-$$
+```math
 \delta=tan^{-1}\left(\frac{2Lsin(\alpha)}{l_d}\right)
-$$
+```
 This is the steer angle required.
 
 
